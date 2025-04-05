@@ -21,24 +21,28 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSLocalNetworkUsageDescription</key>
-    <string>FileDrop needs access to your local network to discover and connect to nearby devices</string>
+    <string>FileDrop needs access to your local network to discover and connect to nearby devices for file sharing</string>
     <key>NSBonjourServices</key>
     <array>
         <string>_filedrop._tcp</string>
         <string>_filedrop._udp</string>
     </array>
     <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>FileDrop uses Bluetooth to discover nearby devices</string>
+    <string>FileDrop uses Bluetooth to discover nearby devices for seamless file sharing</string>
     <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>FileDrop uses Bluetooth to discover and connect to nearby devices</string>
+    <string>FileDrop uses Bluetooth to discover and connect to nearby devices for file sharing</string>
     <key>UIApplicationSupportsIndirectInputEvents</key>
     <true/>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>UIRequiredDeviceCapabilities</key>
     <array>
-        <string>armv7</string>
+        <string>bluetooth-le</string>
     </array>
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
     <key>UISupportedInterfaceOrientations</key>
     <array>
         <string>UIInterfaceOrientationPortrait</string>
@@ -52,5 +56,7 @@
         <string>UIInterfaceOrientationLandscapeLeft</string>
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
 </dict>
 </plist>
